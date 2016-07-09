@@ -1,0 +1,89 @@
+You can monitor ActiveMQ using the Web Console by pointing your browser at
+
+http://localhost:8161/admin
+http://bav58:8161/admin
+U admin
+P admin
+--------------------------------------
+Working with Destinations with MQTT
+
+MQTT supports hierarchies and wildcards, though the delimiters and 
+characters are different: - Here's the mapping:
+
+function	ActiveMQ	MQTT	
+separator	.		/
+element		*		+
+sub tree	>		#
+
+
+These values are automatically transposed between clients 
+using JMS/NMS/Stomp and clients using MQTTT.
+For example - a client subscribing to "foo/#/bar" 
+would receive messages published on a JMS Topic of foo.blah.bar.
+
+...................
+
+:\MyProg\net_srv>cd apache_activemq
+
+:\MyProg\net_srv\apache_activemq>bin\activemq.bat start
+ava Runtime: Oracle Corporation 1.8.0_45 E:\sdk_e\jdk\jdk8_45\jre
+ Heap sizes: current=1013632k  free=991262k  max=1013632k
+   JVM args: -Dcom.sun.management.jmxremote -Xms1G -Xmx1G -Djava.util.logging.config.file=logging.properties -Djava.security.auth.login.config=D:\MyProg\net_sr
+\apache_activemq\bin\..\conf\login.config -Dactivemq.classpath=D:\MyProg\net_srv\apache_activemq\bin\..\conf;D:\MyProg\net_srv\apache_activemq\bin\../conf;D:\M
+Prog\net_srv\apache_activemq\bin\../conf; -Dactivemq.home=D:\MyProg\net_srv\apache_activemq\bin\.. -Dactivemq.base=D:\MyProg\net_srv\apache_activemq\bin\.. -Da
+tivemq.conf=D:\MyProg\net_srv\apache_activemq\bin\..\conf -Dactivemq.data=D:\MyProg\net_srv\apache_activemq\bin\..\data -Djava.io.tmpdir=D:\MyProg\net_srv\apac
+e_activemq\bin\..\data\tmp
+xtensions classpath:
+ [D:\MyProg\net_srv\apache_activemq\bin\..\lib,D:\MyProg\net_srv\apache_activemq\bin\..\lib\camel,D:\MyProg\net_srv\apache_activemq\bin\..\lib\optional,D:\MyPr
+g\net_srv\apache_activemq\bin\..\lib\web,D:\MyProg\net_srv\apache_activemq\bin\..\lib\extra]
+CTIVEMQ_HOME: D:\MyProg\net_srv\apache_activemq\bin\..
+CTIVEMQ_BASE: D:\MyProg\net_srv\apache_activemq\bin\..
+CTIVEMQ_CONF: D:\MyProg\net_srv\apache_activemq\bin\..\conf
+CTIVEMQ_DATA: D:\MyProg\net_srv\apache_activemq\bin\..\data
+oading message broker from: xbean:activemq.xml
+INFO | Refreshing org.apache.activemq.xbean.XBeanBrokerFactory$1@5ca609: startup date [Mon Jun 13 10:18:17 BST 2016]; root of context hierarchy
+INFO | Using Persistence Adapter: KahaDBPersistenceAdapter[D:\MyProg\net_srv\apache_activemq\bin\..\data\kahadb]
+INFO | KahaDB is version 6
+INFO | Recovering from the journal @1:64405
+INFO | Recovery replayed 10000 operations from the journal in 0.219 seconds.
+INFO | PListStore:[D:\MyProg\net_srv\apache_activemq\bin\..\data\localhost\tmp_storage] started
+INFO | Apache ActiveMQ 5.13.3 (localhost, ID:bav58-6730-1465809499921-0:1) is starting
+
+INFO | Listening for connections at: tcp://bav58:61616?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO | Connector openwire started
+INFO | Listening for connections at: amqp://bav58:5672?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO | Connector amqp started
+INFO | Listening for connections at: stomp://bav58:61613?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO | Connector stomp started
+INFO | Listening for connections at: mqtt://bav58:1883?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO | Connector mqtt started
+WARN | ServletContext@o.e.j.s.ServletContextHandler@421cc4{/,null,STARTING} has uncovered http methods for path: /
+INFO | Listening for connections at ws://bav58:61614?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO | Connector ws started
+
+INFO | Apache ActiveMQ 5.13.3 (localhost, ID:bav58-6730-1465809499921-0:1) started
+INFO | For help or more information please see: http://activemq.apache.org
+WARN | Store limit is 102400 mb (current store usage is 1 mb). The data directory: 
+D:\MyProg\net_srv\apache_activemq\bin\..\data\kahadb only has 57792 mb of us
+ble space. - resetting to maximum available disk space: 57792 mb
+
+INFO | No Spring WebApplicationInitializer types detected on classpath
+
+INFO | ActiveMQ WebConsole available at http://0.0.0.0:8161/
+
+INFO | ActiveMQ Jolokia REST API available at http://0.0.0.0:8161/api/jolokia/
+
+INFO | Initializing Spring FrameworkServlet 'dispatcher'
+INFO | No Spring WebApplicationInitializer types detected on classpath
+INFO | jolokia-agent: Using policy access restrictor classpath:/jolokia-access.xml
+
+
+
+
+
+
+
+
+
+
+

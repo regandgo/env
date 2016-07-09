@@ -1,0 +1,25 @@
+D:\my_wrk_prj\iot\paho\paho_mqtt_c\src\utf-8.c" />
+                    <File name="D:\my_wrk_prj\iot\paho\paho_mqtt_c\src\utf-8.h" />
+                </Folder>
+                <Folder name="test">
+                    <Folder name="ssl">
+                        <File name="D:\my_wrk_prj\iot\paho\paho_mqtt_c\test\ssl\all-ca.crt" />
+                        <File name="D:\my_wrk_prj\iot\paho\paho_mqtt_c\test\ssl\all-ca.crt.text" />
+                        <File name="D:\my_wrk_prj\iot\paho\paho_mqtt_c\test\ssl\cert.zip" />
+                        <File name="D:\my_wrk_prj\iot\paho\paho_mqtt_c\test\ssl\client.crt" />
+                        <File name="D:\my_wrk_prj\iot\paho\paho_mqtt_c\test\ssl\client.key" />
+                        <File name="D:\my_wrk_prj\iot\paho\paho_mqtt_c\test\ssl\client.pem" />
+                        <File name="D:\my_wrk_prj\iot\paho\paho_mqtt_c\test\ssl\gen.sh" />
+                        <File name="D:\my_wrk_prj\iot\paho\paho_mqtt_c\test\ssl\mosquitto.conf" />
+                        <File name="D:\my_wrk_prj\iot\paho\paho_mqtt_c\test\ssl\openssl.cnf" />
+                        <File name="D:\my_wrk_prj\iot\paho\paho_mqtt_c\test\ssl\server-expired.crt" />
+                        <File name="D:\my_wrk_prj\iot\paho\paho_mqtt_c\test\ssl\server.crt" />
+                        <File name="D:\my_wrk_prj\iot\paho\paho_mqtt_c\test\ssl\server.key" />
+                        <File name="D:\my_wrk_prj\iot\paho\paho_mqtt_c\test\ssl\server.pem" />
+                        <File name="D:\my_wrk_prj\iot\paho\paho_mqtt_c\test\ssl\test-alt-ca.crt" />
+                        <File name="D:\my_wrk_prj\iot\paho\paho_mqtt_c\test\ssl\test-alt-ca.key" />
+                        <File name="D:\my_wrk_prj\iot\paho\paho_mqtt_c\test\ssl\test-bad-root-ca.crt" />
+                        <File name="D:\my_wrk_prj\iot\paho\paho_mqtt_c\test\ssl\test-bad-root-ca.key" />
+                        <File name="D:\my_wrk_prj\iot\paho\paho_mqtt_c\test\ssl\test-fake-root-ca.crt" />
+                        <File name="D:\my_wrk_prj\iot\paho\paho_mqtt_c\test\ssl\test-fake-root-ca.key" />
+                        <Fil
